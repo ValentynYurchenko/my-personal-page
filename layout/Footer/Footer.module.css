@@ -1,0 +1,46 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 10px 40px;
+  color: var(--white);
+  font-size: 16px;
+  line-height: 10px;
+  align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 25px 30px;
+}
+
+.outsidenav {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: start;
+  gap: 20px;
+}
+
+.footer a,
+.footer svg {
+  transition: all 0.2s linear;
+}
+
+.outsidenav svg {
+  transform: scale(0.7);
+}
+
+.outsidenav svg:hover {
+  transform: scale(1);
+}
+
+.footer a:hover,
+.footer a:hover .svg {
+  color: gray;
+  fill: gray;
+}
+
+@media (max-width: 765px) {
+  .footer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-template-rows: 26px auto auto;
+  }
+}

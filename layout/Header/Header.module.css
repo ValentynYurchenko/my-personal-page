@@ -1,0 +1,87 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  color: var(--white);
+  font-size: 18px;
+  gap: 10px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 25px 30px;
+}
+
+.leftpartnav {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.leftpartnav h2 {
+  animation: change-color 5s infinite alternate-reverse ease-in-out;
+}
+
+.leftpartnav svg {
+  transform: scale(0.8);
+}
+
+.circleIcon:hover {
+  animation: spiner 3s infinite linear;
+}
+
+.insidenav {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+}
+
+.insidenav a:hover {
+  text-decoration: underline;
+}
+
+@keyframes change-color {
+  0% {
+    color: red;
+  }
+
+  50% {
+    color: white;
+  }
+
+  100% {
+    color: rgb(238, 255, 0);
+  }
+}
+
+@keyframes spiner {
+  from {
+    transform: rotateZ(0deg) scale(0.8);
+  }
+
+  to {
+    transform: rotateZ(360deg) scale(0.8);
+  }
+}
+
+@media (max-width: 950px) {
+  .leftpartnavicons {
+    display: none;
+  }
+}
+
+@media (max-width: 765px) {
+  .header {
+    grid-template-columns: 1fr;
+  }
+
+  .leftpartnav {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+
+  .insidenav {
+    justify-content: center;
+  }
+}
