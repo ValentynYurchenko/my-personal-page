@@ -1,4 +1,13 @@
 .main {
-  color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr;
+  padding: 10px 25px;
+  color: rgb(255, 255, 255);
   font-size: 20px;
+}
+
+.main img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
