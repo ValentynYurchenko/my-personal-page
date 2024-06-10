@@ -3,8 +3,10 @@ body {
   margin: 0;
   padding: 0;
   color: var(--black);
-  background: #f5f6f8 url('../layout/icons/bg.jpg') center;
-  background-size: cover;
+  /* background: #f5f6f8 url('../layout/icons/bg.jpg') center;
+  background-size: cover; */
+
+  background: linear-gradient(black, rgb(0, 26, 170), black);
 
   font-family: var(--font-family);
 }

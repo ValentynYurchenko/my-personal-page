@@ -1,14 +1,26 @@
 .footer {
   display: grid;
+  grid-template-columns: 1fr;
+
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  border-top: 1px solid rgba(143, 143, 143, 0.3);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(320px, 1250px);
+  justify-content: center;
+}
+
+.nav {
+  display: grid;
   grid-template-columns: 1fr auto auto;
   gap: 10px 40px;
   color: var(--white);
   font-size: 16px;
   line-height: 10px;
   align-items: center;
-
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 25px 30px;
+  padding: 25px 30px 25px 20px;
 }
 
 .outsidenav {
@@ -38,7 +50,7 @@
 }
 
 @media (max-width: 765px) {
-  .footer {
+  .nav {
     grid-template-columns: 1fr;
     justify-items: center;
     grid-template-rows: 26px auto auto;
